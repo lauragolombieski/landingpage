@@ -1,0 +1,186 @@
+.row {
+  display: flex;
+  font-family: "Junge", cursive;
+
+}
+.column {
+  flex: 1;
+  padding: 10px;
+  width: 30vh;
+}
+
+.column:nth-child(1) {
+    flex: 0 0 35vw; /* A primeira coluna tem 30vh de altura */
+    text-align: center;
+
+}
+.column:nth-child(2) {
+    flex: 0 0 55vw; /* A segunda coluna tem 70vh de altura */
+    left: -110px;
+    position: relative;
+    top: 70px;
+}
+
+body {
+  margin: 0px;
+}
+
+.jacques-francois-regular {
+  font-family: "Jacques Francois", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  position: relative;
+}
+
+.texto-estilizado {
+  font-family: "Junge", cursive;
+  font-weight: 80;
+  font-style: normal;
+}
+
+.botao2 {
+  font-family: "Jacques Francois", serif;
+  background-color: #ffffff; /* Cor de fundo branca */
+  color: #000000; /* Cor do texto preto */
+  border: 2px solid #ffffff; /* Borda preta de 2 pixels */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 20px; /* Tamanho da fonte */
+  border-radius: 0px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor do mouse muda para ponteiro */
+  text-decoration: none; /* Remove sublinhado padrão */
+  display: inline-block; /* Torna o elemento um bloco de nível de linha */
+  width: 525px;
+  height: 65px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.sujeito {
+  font-family: "Jacques Francois", serif;
+  font-size: 45px; /* Tamanho da fonte */
+  position: relative;
+  top: 35vh;
+  left: 65vh;
+}
+
+.sujeito2 {
+  font-family: "Jacques Francois", serif;
+  font-size: 26px; /* Tamanho da fonte */
+  position: relative;
+  top: 34vh;
+  left: 32vh;
+  max-width: 80vw;
+  text-align: center;
+  font-weight: 3;
+}
+
+.botao:hover {
+  background-color: #747171; /* Cor de fundo um pouco mais clara */
+  border: 2px solid #747171; /* Borda preta de 2 pixels */
+}
+
+.botao {
+  background-color: #ffffff; /* Cor de fundo branca */
+  color: #000000; /* Cor do texto preto */
+  border: 2px solid #ffffff; /* Borda preta de 2 pixels */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 22px; /* Tamanho da fonte */
+  border-radius: 0px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor do mouse muda para ponteiro */
+  text-decoration: none; /* Remove sublinhado padrão */
+  display: inline-block; /* Torna o elemento um bloco de nível de linha */
+  top: 40vh;
+  left: 60vh;
+  width: 520px;
+  height: 75px;
+  position: relative;
+  font-family: "Jacques Francois", serif;
+}
+
+.botao2:hover {
+  background-color: #747171; /* Cor de fundo um pouco mais clara */
+  border: 2px solid #747171; /* Borda preta de 2 pixels */
+}
+
+.image {
+  position: relative;
+  z-index: 0;
+  position: center;
+}
+
+.imagem {
+  width: 99vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.titulo {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  padding: 20px;
+  left: 2%;
+  z-index: 1;
+}
+
+.primeiro {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 50vh;
+  max-width: 100vw;
+}
+
+.text-align {
+  text-align: justify;
+  width: 75%; /* Defina a largura do contêiner conforme necessário */
+  margin: 0 auto; /* Isso centraliza o contêiner horizontalmente */
+  padding: 15px;
+  font-size: 20px;
+}
+
+.card-area {
+  background-color: #ffffff;
+}
+
+.texto-estilizadob {
+  font-family: "Jacques Francois", serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  padding-top: 40px;
+}
+
+.texto-estilizadob2 {
+  font-family: "Jacques Francois", serif;
+  font-style: normal;
+  font-weight: 100px;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 58;
+}
+
+.vermeio {
+  font-family: "Jacques Francois", serif;
+  background-color: #40140f; /* Define a cor de fundo */
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+
+.rosinha {
+  background-color: #f8dfdb; /* Define a cor de fundo */
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.AA {
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 80px;
+  padding: 10px;
+}
