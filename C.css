@@ -58,7 +58,7 @@ body {
   cursor: pointer; /* Cursor do mouse muda para ponteiro */
   text-decoration: none; /* Remove sublinhado */
   display: inline-block; /* Torna o elemento um bloco de nível de linha */
-  width: 525px;
+  width: 450px;
   height: 65px;
   position: relative;
   margin-bottom: 30px;
@@ -103,7 +103,7 @@ body {
   text-decoration: none;
   text-align: center;
   z-index: 1;
-  width: 520px;
+  width: 450px;
   height: 80px;
   top: 44vh;
   position: relative;
