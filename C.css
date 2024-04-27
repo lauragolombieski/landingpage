@@ -1,24 +1,28 @@
 .row {
   display: flex;
   font-family: "Junge", cursive;
+  flex-wrap: wrap;
+
 
 }
 .column {
   flex: 1;
-  padding: 10px;
   width: 30vh;
+  max-width: 100%;
 }
 
 .column:nth-child(1) {
-    flex: 0 0 35vw; /* A primeira coluna tem 30vh de altura */
+    flex: 0 0 35vw; /* Primeira coluna tem 35vw de altura */
     text-align: center;
+    margin-top: 75px;
 
 }
+
 .column:nth-child(2) {
-    flex: 0 0 55vw; /* A segunda coluna tem 70vh de altura */
-    left: -110px;
+    flex: 0 0 55vw; /* A segunda coluna tem 55vh de altura */
     position: relative;
-    top: 70px;
+    top: 63px;
+    margin-top: 75px;
 }
 
 body {
@@ -31,6 +35,10 @@ body {
   font-style: normal;
   font-size: 20px;
   position: relative;
+  left: 20px;
+  top: -97vh;
+  z-index: 1;
+  color: rgb(255, 255, 255)
 }
 
 .texto-estilizado {
@@ -41,91 +49,95 @@ body {
 
 .botao2 {
   font-family: "Jacques Francois", serif;
-  background-color: #ffffff; /* Cor de fundo branca */
-  color: #000000; /* Cor do texto preto */
-  border: 2px solid #ffffff; /* Borda preta de 2 pixels */
+  background-color: #ffffff; 
+  color: #000000; 
+  border: 2px solid #ffffff; /* Borda */
   padding: 10px 20px; /* Espaçamento interno do botão */
-  font-size: 20px; /* Tamanho da fonte */
-  border-radius: 0px; /* Bordas arredondadas */
+  font-size: 20px; 
+  border-radius: 0px; /* Forma do botão */
   cursor: pointer; /* Cursor do mouse muda para ponteiro */
-  text-decoration: none; /* Remove sublinhado padrão */
+  text-decoration: none; /* Remove sublinhado */
   display: inline-block; /* Torna o elemento um bloco de nível de linha */
   width: 525px;
   height: 65px;
   position: relative;
-  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .sujeito {
   font-family: "Jacques Francois", serif;
-  font-size: 45px; /* Tamanho da fonte */
+  font-size: 40px; 
   position: relative;
-  top: 35vh;
-  left: 65vh;
+  top: 45vh;
+  text-align: center;
+  z-index: 1;
+  
 }
 
 .sujeito2 {
   font-family: "Jacques Francois", serif;
-  font-size: 26px; /* Tamanho da fonte */
-  position: relative;
-  top: 34vh;
-  left: 32vh;
-  max-width: 80vw;
+  font-size: 20px; 
+  position:relative;
+  top: 43vh;
+  width: 90vw;
+  height: auto;
   text-align: center;
   font-weight: 3;
+  z-index: 1;
 }
 
 .botao:hover {
-  background-color: #747171; /* Cor de fundo um pouco mais clara */
-  border: 2px solid #747171; /* Borda preta de 2 pixels */
+  background-color: #747171; /* Cor de fundo  */
+  border: 2px solid #747171; 
 }
 
 .botao {
-  background-color: #ffffff; /* Cor de fundo branca */
-  color: #000000; /* Cor do texto preto */
-  border: 2px solid #ffffff; /* Borda preta de 2 pixels */
+  background-color: #ffffff; 
+  color: #000000;
+  border: 2px solid #ffffff; 
   padding: 10px 20px; /* Espaçamento interno do botão */
-  font-size: 22px; /* Tamanho da fonte */
-  border-radius: 0px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor do mouse muda para ponteiro */
-  text-decoration: none; /* Remove sublinhado padrão */
-  display: inline-block; /* Torna o elemento um bloco de nível de linha */
-  top: 40vh;
-  left: 60vh;
+  font-size: 22px; 
+  border-radius: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
   width: 520px;
-  height: 75px;
+  height: 80px;
+  top: 44vh;
   position: relative;
   font-family: "Jacques Francois", serif;
+
 }
 
 .botao2:hover {
-  background-color: #747171; /* Cor de fundo um pouco mais clara */
-  border: 2px solid #747171; /* Borda preta de 2 pixels */
-}
-
-.image {
-  position: relative;
-  z-index: 0;
-  position: center;
+  background-color: #747171; 
+  border: 2px solid #747171; 
 }
 
 .imagem {
-  width: 99vw;
-  height: 100vh;
+  position: relative;
   z-index: 0;
+    width: 99vw; /* Define a largura da imagem como 100% da largura da janela de visualização */
+    height: 99vh; /* Define a altura da imagem como 100% da altura da janela de visualização */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço da div, mantendo a proporção */
 }
 
 .titulo {
   color: rgb(255, 255, 255);
   position: absolute;
+  text-align: center;
   padding: 20px;
+  margin-bottom: 20px;
   left: 2%;
-  z-index: 1;
+  max-width: 100%;
+  max-height: 200px;
 }
 
 .primeiro {
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
+  width: 90vw;
 }
 
 .container {
@@ -135,8 +147,8 @@ body {
 
 .text-align {
   text-align: justify;
-  width: 75%; /* Defina a largura do contêiner conforme necessário */
-  margin: 0 auto; /* Isso centraliza o contêiner horizontalmente */
+  width: 75%; /* Define a largura */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
   padding: 15px;
   font-size: 20px;
 }
@@ -165,14 +177,14 @@ body {
 
 .vermeio {
   font-family: "Jacques Francois", serif;
-  background-color: #40140f; /* Define a cor de fundo */
+  background-color: #40140f; 
   text-align: center;
   width: 100%;
-  height: 50%;
+  height: auto;
 }
 
 .rosinha {
-  background-color: #f8dfdb; /* Define a cor de fundo */
+  background-color: #f8dfdb; 
   text-align: center;
   position: relative;
   padding: 20px;
